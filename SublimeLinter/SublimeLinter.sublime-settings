@@ -1,0 +1,202 @@
+{
+  /****************************************************************************
+    User Settings
+  ****************************************************************************/
+
+  "user": {
+
+    /****************************************************************************
+      User Settings: Display
+    ****************************************************************************/
+
+    /*
+      Whether to print errors to Sublime Text console
+      Default: false
+    */
+    "debug": false,
+
+    /*
+      When "Lint Mode" is "Background", how long to wait before linting.
+      Default: 0.25 (seconds)
+    */
+    "delay": 0.25,
+
+    /*
+      The current lint mode ("background", "load/save", "save only", "manual")
+      Default: "background"
+    */
+    "lint_mode": "background",
+
+    "rc_search_limit": 3,
+
+    "shell_timeout": 10,
+
+    /*
+      Whether NextError/PreviousError commands should wrap at end/beginning of file
+      Default: true
+    */
+    "wrap_find": true,
+
+    /****************************************************************************
+      User Settings: Display
+    ****************************************************************************/
+
+    /*
+      The color used to mark errors in the text.
+      Default: d02000
+    */
+    "error_color": "d02000",
+
+    /*
+      The current mark style ("none", "fill", "outline", "solid underline", "squiggly underline")
+      Default: "outline"
+    */
+    "mark_style": "outline",
+
+    /*
+      Whether to highlight the entire line if an error occurs with no column information
+      Default: false
+    */
+    "no_column_highlights_line": false,
+
+    /*
+      Whether to hide warnings in the "Show All Errors" quick panel.
+      Default: false
+    */
+    "passive_warnings": false,
+
+    /*
+      Whether to show all errors in a quick panel when file is saved.
+      Default: false
+    */
+    "show_errors_on_save": false,
+
+    /*
+      Whether to show error marks in the minimap.
+      Default: true
+    */
+    "show_marks_in_minimap": false,
+
+    /*
+      The color used to mark warnings in the text.
+      Default: ddb700
+    */
+    "warning_color": "ddb700", // Default
+
+    /****************************************************************************
+      User Settings: Gutter
+    ****************************************************************************/
+
+    /*
+      Package-relative path to the .gutter-theme file
+      Default: "Packages/SublimeLinter/gutter-themes/Default.gutter-theme"
+    */
+    "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
+
+    /*
+      List of available gutter themes to exclude
+      Default: []
+    */
+    "gutter_theme_excludes": [],
+
+    /****************************************************************************
+      User Settings: Linters
+    ****************************************************************************/
+
+    "linters": {
+      "contrib-sublime-syntax": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+      },
+      "json": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+      },
+      "pep257": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+        "ignore": "D200, D203, D209, D204"
+      },
+      "pep8": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+        "ignore": "E309",
+        "max-line-length": 120
+      },
+      "pydocstyle": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+        "max-line-length": 120
+      },
+      "pylint": {
+        "@disable": false,
+        "args": [],
+        "excludes": [],
+        "max-line-length": 120
+      },
+      "pyyaml": {
+        "@disable": false,
+        "args": [],
+        "excludes": []
+      },
+      "rst": {
+        "@disable": true,
+        "args": [],
+        "excludes": []
+      },
+      "xmllint": {
+        "@disable": false,
+        "args": [],
+        "excludes": []
+      }
+    },
+
+    /****************************************************************************
+      User Settings: Paths
+    ****************************************************************************/
+
+    "paths": {
+      "linux": [],
+      "osx": [],
+      "windows": []
+    },
+
+    /****************************************************************************
+      User Settings: Python
+    ****************************************************************************/
+
+    // The Python version to use
+    "@python": 2.7,
+
+    // The path to python
+    "python_paths": {
+      "linux": [],
+      "osx": [],
+      "windows": []
+    },
+
+    /****************************************************************************
+      User Settings: Syntax Map
+    ****************************************************************************/
+
+    /*
+      Each key is a syntax file (.tmLanguage or .sublime-syntax) and the
+      value is the linter to use.
+    */
+    "syntax_map": {
+      "html (django)": "html",
+      "html (rails)": "html",
+      "html 5": "html",
+      "javascript (babel)": "javascript",
+      "magicpython": "python",
+      "php": "html",
+      "python django": "python",
+      "pythonimproved": "python"
+    }
+  }
+}

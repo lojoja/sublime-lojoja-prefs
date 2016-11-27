@@ -1,0 +1,15 @@
+{
+  /****************************************************************************
+    Language Specific Settings
+  ****************************************************************************/
+
+  //  File extensions to associate with this language
+  "extensions": ["json", "sublime-settings", "sublime-menu", "sublime-keymap", "sublime-mousemap", "sublime-theme", "sublime-build", "sublime-project", "sublime-completions", "sublime-commands", "sublime-macro"],
+
+  /****************************************************************************
+    Sublime Preferences Override
+  ****************************************************************************/
+
+  //  The number of spaces a tab is considered equal to
+  "tab_size": 2
+}

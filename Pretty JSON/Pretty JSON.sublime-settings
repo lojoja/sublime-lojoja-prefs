@@ -1,0 +1,39 @@
+{
+  /****************************************************************************
+    General
+  ****************************************************************************/
+
+  // Format entire file if nothing is selected
+  "use_entire_file_if_no_selection": true,
+
+  // Format when file is saved
+  "pretty_on_save": false,
+
+  // Validate when file is saved
+  "validate_on_save": true,
+
+  /****************************************************************************
+    Output
+  ****************************************************************************/
+
+  // The number of tabs/spaces to indent each level
+  "indent": 2,
+
+  // Force values to ascii
+  "ensure_ascii": false,
+
+  // The line separator character
+  "line_separator": ",",
+
+  // The value separator character
+  "value_separator": ": ",
+
+  // Sort json keys
+  "sort_keys": false,
+
+  // Force arrays to one line
+  "keep_arrays_single_line": false,
+
+  // The maximum line length for arrays
+  "max_arrays_line_length": 120
+}

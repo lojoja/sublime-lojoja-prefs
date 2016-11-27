@@ -1,0 +1,62 @@
+[
+  {
+    "id": "side-bar-files-open-with",
+
+    "children": [
+      // Adobe CC
+      {
+        "caption": "Adobe Illustrator",
+        "id": "side-bar-files-open-with-illustrator",
+        "command": "side_bar_files_open_with",
+        "args": {
+          "paths": [],
+          "application": "/Applications/Adobe Illustrator CC 2015.3/Adobe Illustrator.app",
+          "extensions":"ai|svg",
+          "args": []
+        },
+        "open_automatically" : false
+      },
+      {
+        "caption": "Adobe Photoshop",
+        "id": "side-bar-files-open-with-photoshop",
+        "command": "side_bar_files_open_with",
+        "args": {
+          "paths": [],
+          "application": "/Applications/Adobe Photoshop CC 2015.5/Adobe Photoshop CC 2015.5.app",
+          "extensions":"bmp|gif|jpg|jpeg|png|psd|tga|tif|tiff",
+          "args": []
+        },
+        "open_automatically" : false
+      },
+
+      // Microsoft Office
+      {
+        "caption": "Microsoft Excel 2011",
+        "id": "side-bar-files-open-with-excel",
+        "command": "side_bar_files_open_with",
+        "args": {
+          "paths": [],
+          "application": "/Applications/Microsoft Office 2011/Microsoft Excel.app",
+          "extensions": "csv|tsv|xls|xlsx",
+          "args": []
+        },
+        "open_automatically" : false
+      },
+      {
+        "caption": "Microsoft Word 2011",
+        "id": "side-bar-files-open-with-excel",
+        "command": "side_bar_files_open_with",
+        "args": {
+          "paths": [],
+          "application": "/Applications/Microsoft Office 2011/Microsoft Word.app",
+          "extensions": "dox|docx|rtf",
+          "args": []
+        },
+        "open_automatically" : false
+      },
+
+      //separator
+      {"caption":"-"}
+    ]
+  }
+]

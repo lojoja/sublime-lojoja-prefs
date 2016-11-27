@@ -1,0 +1,84 @@
+{
+  /****************************************************************************
+    Status Bar
+  ****************************************************************************/
+
+  "statusbar_file_size": false,
+
+  "statusbar_modified_time": false,
+  "statusbar_modified_time_format": "%A %b %d %H:%M:%S %Y",
+  "statusbar_modified_time_locale": "",
+
+  /****************************************************************************
+    Creating Files
+  ****************************************************************************/
+
+  "new_files_relative_to_project_root": false,
+  "new_folders_relative_to_project_root": false,
+
+  /****************************************************************************
+    Deleting Files
+  ****************************************************************************/
+
+  "confirm_before_deleting": true,
+  "confirm_before_permanently_deleting": true,
+
+  "close_affected_buffers_when_deleting_even_if_dirty": false,
+
+  "disable_send_to_trash": false,
+
+  /****************************************************************************
+    Menu Items
+  ****************************************************************************/
+
+  "disabled_menuitem_copy_dir_path": true,
+  "disabled_menuitem_copy_name": false,
+  "disabled_menuitem_copy_path": false,
+  "disabled_menuitem_copy_path_windows": true,
+
+  "disabled_menuitem_edit": false,
+  "disabled_menuitem_edit_to_right": false,
+
+  "disabled_menuitem_empty": true,
+
+  "disabled_menuitem_find_in_project": false,
+
+  "disabled_menuitem_open_in_browser": false,
+  "disabled_menuitem_open_in_new_window": false,
+  "disabled_menuitem_open_run": false,
+
+  "disabled_menuitem_paste_in_parent": false,
+
+  "hide_open_with_entries_when_there_are_no_applicable": false,
+
+  /****************************************************************************
+    Browser
+
+    These settings may work if browsers are installed in the default locations.
+  ****************************************************************************/
+
+  /*
+    Default browser options include:
+      chrome, canary, chromium, firefox, ie, opera, safari
+  */
+  "default_browser": "safari", //one of this list:
+
+  /*
+    All browser options include:
+      chrome, canary, chromium, edge, firefox, ie, opera, safari
+  */
+  "open_all_browsers": [],
+
+  // The full path to a portable browser
+  "portable_browser": "",
+
+  /****************************************************************************
+    Miscellaneous
+  ****************************************************************************/
+
+  "auto_close_empty_groups": false,
+
+  "use_powershell": true,
+
+  "i_donated_to_sidebar_enhancements_developer": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW"
+}
