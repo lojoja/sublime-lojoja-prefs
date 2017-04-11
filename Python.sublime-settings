@@ -4,7 +4,7 @@
   ****************************************************************************/
 
   //  File extensions to associate with this language
-  "extensions": ["py"],
+  //"extensions": ["py"],
 
   /****************************************************************************
     Sublime Preferences Override
