@@ -83,6 +83,9 @@
     */
     "warning_color": "ddb700", // Default
 
+    // Whether to display inline tooltips
+    "tooltips": true
+
     /****************************************************************************
       User Settings: Gutter
     ****************************************************************************/
@@ -107,18 +110,12 @@
       "contrib-sublime-syntax": {
         "@disable": false,
         "args": [],
-        "excludes": [],
+        "excludes": []
       },
       "json": {
         "@disable": false,
         "args": [],
-        "excludes": [],
-      },
-      "pep257": {
-        "@disable": true,
-        "args": [],
-        "excludes": [],
-        "ignore": "D200, D203, D209, D204"
+        "excludes": []
       },
       "pep8": {
         "@disable": false,
@@ -131,14 +128,13 @@
         "@disable": true,
         "args": [],
         "excludes": [],
-        "max-line-length": 120
+        "add-ignore": "D200, D203, D209, D204"
       },
       "pylint": {
         "@disable": false,
-        "args": [],
+        "args": ["--max-line-length=120"],
         "excludes": [],
-        "disable": "R0201, R0903, R0913",
-        "max-line-length": 120
+        "disable": "R0201, R0903, R0913"
       },
       "pyyaml": {
         "@disable": false,
