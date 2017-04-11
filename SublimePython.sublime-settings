@@ -42,7 +42,7 @@
   "python_linting": false,
 
   // Enable pep 8 linting
-  "pep8": true,
+  "pep8": false,
 
   // Ignore certain pep8 errors
   "pep8_ignore": ["E309"],

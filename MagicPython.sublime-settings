@@ -6,9 +6,6 @@
   //  File extensions to associate with this language
   "extensions": ["py"],
 
-  // ???
-  "suppress_python_not_found_error": true,
-
   /****************************************************************************
     Sublime Preferences Override
   ****************************************************************************/

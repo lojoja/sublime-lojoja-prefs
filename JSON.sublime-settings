@@ -4,7 +4,19 @@
   ****************************************************************************/
 
   //  File extensions to associate with this language
-  "extensions": ["json", "sublime-settings", "sublime-menu", "sublime-keymap", "sublime-mousemap", "sublime-theme", "sublime-build", "sublime-project", "sublime-completions", "sublime-commands", "sublime-macro"],
+  "extensions": [
+    "json",
+    "sublime-settings",
+    "sublime-menu",
+    "sublime-keymap",
+    "sublime-mousemap",
+    "sublime-theme",
+    "sublime-build",
+    "sublime-project",
+    "sublime-completions",
+    "sublime-commands",
+    "sublime-macro"
+  ],
 
   /****************************************************************************
     Sublime Preferences Override

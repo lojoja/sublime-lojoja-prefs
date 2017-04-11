@@ -115,7 +115,7 @@
         "excludes": [],
       },
       "pep257": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": [],
         "ignore": "D200, D203, D209, D204"
@@ -128,7 +128,7 @@
         "max-line-length": 120
       },
       "pydocstyle": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": [],
         "max-line-length": 120
@@ -137,6 +137,7 @@
         "@disable": false,
         "args": [],
         "excludes": [],
+        "disable": "R0201, R0903, R0913",
         "max-line-length": 120
       },
       "pyyaml": {
@@ -171,7 +172,7 @@
     ****************************************************************************/
 
     // The Python version to use
-    "@python": 2.7,
+    "@python": "3.6",
 
     // The path to python
     "python_paths": {

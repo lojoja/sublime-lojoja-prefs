@@ -334,8 +334,8 @@
   // Additional situations to trigger auto complete
   "auto_complete_triggers": [
     {
-      "selector": "text.html",
-      "characters": "<"
+      "characters": "<",
+      "selector": "text.html"
     }
   ],
 
@@ -627,13 +627,9 @@
     a restart may be required if the package contains plugins.
   */
   "ignored_packages": [
-    "Anaconda",
     "All Autocomplete",
     "Colorsublime",
-    "GitGutter",
     "Python",
-    "PythonImproved",
-    "SublimeLinter-pep257",
     "Vintage"
   ],
 

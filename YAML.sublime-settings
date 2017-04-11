@@ -4,7 +4,12 @@
   ****************************************************************************/
 
   //  File extensions to associate with this language
-  "extensions": ["sublime-syntax", "yaml", "YAML-tmTheme", "yml"],
+  "extensions": [
+    "sublime-syntax",
+    "yaml",
+    "YAML-tmTheme",
+    "yml"
+  ],
 
   /****************************************************************************
     Sublime Preferences Override
