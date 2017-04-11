@@ -1,0 +1,23 @@
+{
+  /****************************************************************************
+    Language Specific Settings
+  ****************************************************************************/
+
+  //  File extensions to associate with this language
+  "extensions": ["sublime-syntax"],
+
+  /****************************************************************************
+    Sublime Preferences Override
+  ****************************************************************************/
+
+  //  The number of spaces a tab is considered equal to
+  "tab_size": 2,
+
+  // Additional situations to trigger auto complete
+  "auto_complete_triggers": [
+    {
+      "characters": ".",
+      "selector": "source.yaml-tmlanguage - comment"
+    }
+  ]
+}
