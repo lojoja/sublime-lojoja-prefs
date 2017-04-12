@@ -8,7 +8,7 @@
   /*
     UI Theme. Control the look of Sublime Text's UI (buttons, tab, scroll bars, etc.)
   */
-  "theme": "El Capitan.sublime-theme",
+  "theme": "Material-Theme.sublime-theme",
 
   //  El Capitan Theme Settings
   "el_capitan_font_default": false,
@@ -16,6 +16,55 @@
   "el_capitan_font_helvetica_neue": true,
   "el_capitan_font_helvetica": false,
   "el_capitan_sidebar_blue_folders": true,
+
+  // Material Theme Settings
+  "material_theme_accent_lime": false,
+  "material_theme_accent_purple": false,
+  "material_theme_accent_red": false,
+  "material_theme_accent_orange": false,
+  "material_theme_accent_yellow": false,
+  "material_theme_accent_indigo": false,
+  "material_theme_accent_pink": false,
+  "material_theme_accent_blue": false,
+  "material_theme_accent_cyan": false,
+  "material_theme_accent_bright-teal": false,
+  "material_theme_accent_acid-lime": false,
+  "material_theme_accent_graphite": false,
+  "material_theme_accent_brba": false, // dark green
+  "material_theme_accent_sky": false, // light cyan
+  "material_theme_accent_tomato": false,
+
+  "material_theme_tabs_autowidth": false,
+  "material_theme_tabs_separator": false,
+  "material_theme_bold_tab": false,
+  "material_theme_small_tab": true,
+
+  "material_theme_disable_fileicons": false,
+  "material_theme_big_fileicons": false,
+  "material_theme_disable_folder_animation": false,
+  "material_theme_arrow_folders": false,
+  "material_theme_compact_sidebar": true,
+  "material_theme_bullet_tree_indicator": false,
+  "material_theme_disable_tree_indicator": false,
+  "material_theme_tree_headings": true, // For Material Theme Appbar
+
+  "material_theme_compact_panel": true,
+  "material_theme_small_statusbar": true,
+  "material_theme_panel_separator": false,
+  "material_theme_contrast_mode": true,
+  "material_theme_bright_scrollbars": false,
+  "material_theme_accent_scrollbars": false,
+
+  "material_theme_appbar_lime": false,
+  "material_theme_appbar_orange": false,
+  "material_theme_appbar_purple": false,
+  "material_theme_appbar_red": false,
+  "material_theme_appbar_yellow": false,
+  "material_theme_appbar_indigo": false,
+  "material_theme_appbar_pink": false,
+  "material_theme_appbar_blue": false,
+  "material_theme_appbar_cyan": false,
+  "material_theme_appbar_charcoal": false,
 
   /****************************************************************************
     Editor Text Settings

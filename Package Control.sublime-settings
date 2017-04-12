@@ -300,13 +300,15 @@
 
   "installed_packages":
   [
-    "~lojojaPrefs",
+    "A File Icon",
     "Anaconda",
     "Color Scheme - lojoja Colors",
     "Config Files",
     "GitGutter",
     "Indent XML",
     "MagicPython",
+    "Material Theme",
+    "Material Theme - Appbar",
     "Package Control",
     "PackageDev",
     "PackageResourceViewer",
@@ -327,6 +329,7 @@
     "Text Pastry",
     "Theme - El Capitan",
     "xml2json",
+    "~lojojaPrefs"
   ],
 
   /****************************************************************************
