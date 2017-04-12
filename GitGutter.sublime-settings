@@ -174,9 +174,9 @@
     "anaconda-lint-outlines-illegal",
     "anaconda-lint-outlines-violation",
     "anaconda-lint-outlines-warning",
-    "sublimelinter-error-marks",
+    //"sublimelinter-error-marks",
     "sublimelinter-error-gutter-marks",
-    "sublimelinter-warning-marks",
+    //"sublimelinter-warning-marks",
     "sublimelinter-warning-gutter-marks",
     "bookmarks"
   ],
