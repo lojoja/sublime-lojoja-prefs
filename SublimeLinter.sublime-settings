@@ -84,7 +84,7 @@
     "warning_color": "ddb700", // Default
 
     // Whether to display inline tooltips
-    "tooltips": true
+    "tooltips": true,
 
     /****************************************************************************
       User Settings: Gutter
