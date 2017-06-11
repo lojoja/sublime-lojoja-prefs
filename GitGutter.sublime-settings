@@ -1,4 +1,12 @@
 {
+  /****************************************************************************
+    Plugin State
+  ****************************************************************************/
+  /*
+    Set false to disable evaluation of changes and hide all gutter icons,
+    status message and minimap marker.
+  */
+  "enable": true,
 
   /****************************************************************************
     Git Path
@@ -174,9 +182,7 @@
     "anaconda-lint-outlines-illegal",
     "anaconda-lint-outlines-violation",
     "anaconda-lint-outlines-warning",
-    //"sublimelinter-error-marks",
     "sublimelinter-error-gutter-marks",
-    //"sublimelinter-warning-marks",
     "sublimelinter-warning-gutter-marks",
     "bookmarks"
   ],

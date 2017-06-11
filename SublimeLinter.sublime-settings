@@ -112,13 +112,23 @@
         "args": [],
         "excludes": []
       },
+      "flake8": {
+          "@disable": false,
+          "args": [],
+          "builtins": "",
+          "excludes": [],
+          "ignore": "",
+          "max-complexity": 10,
+          "max-line-length": 120,
+          "select": ""
+      },
       "json": {
         "@disable": false,
         "args": [],
         "excludes": []
       },
       "pep8": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": [],
         "ignore": "E309",
@@ -131,7 +141,7 @@
         "add-ignore": "D200, D203, D209, D204"
       },
       "pylint": {
-        "@disable": false,
+        "@disable": true,
         "args": ["--max-line-length=120"],
         "excludes": [],
         "disable": "R0201, R0903, R0913"

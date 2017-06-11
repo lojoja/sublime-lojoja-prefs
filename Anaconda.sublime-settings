@@ -304,7 +304,7 @@
   "use_pylint": false,
 
   //  Set this to false to turn pep8 checking off completely
-  "pep8": true,
+  "pep8": false,
 
   /*
     If setted, the given file will be used as configuration for pep8
@@ -339,7 +339,7 @@
   "pep8_error_levels": {"E": "W", "W": "V", "V": "V"},
 
   //  Set this to true to turn pep257 checking on
-  "pep257": true,
+  "pep257": false,
 
   /*
     A list of pep257 error numbers to ignore.
