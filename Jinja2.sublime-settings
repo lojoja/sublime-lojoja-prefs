@@ -14,6 +14,7 @@
     "html.j2",
     "html.jinja",
     "html.jinja2",
+    "txt.j2",
     "xhtml.j2",
     "xhtml.jinja",
     "xhtml.jinja2",
