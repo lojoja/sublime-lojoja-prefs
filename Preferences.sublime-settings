@@ -109,6 +109,12 @@
     "no_round"
   ],
 
+  /*
+    Font options for theme text. Valid options are: "no_antialias",
+    "gray_antialias", "gdi" (Windows only) and "directwrite" (Windows only)
+  */
+  "theme_font_options": [],
+
   /****************************************************************************
     General Settings
   ****************************************************************************/
@@ -126,7 +132,7 @@
   "margin": 4,
 
   // Fold buttons are the triangles shown in the gutter to fold regions of text
-  "fold_buttons": false,
+  "fold_buttons": true,
 
   // Hides the fold buttons unless the mouse is over the gutter
   "fade_fold_buttons": true,
@@ -364,6 +370,12 @@
   "default_line_ending": "system",
 
   /*
+    When enabled, hovering over a word will show a popup listing all
+    possible locations for the definition symbol. Requires index_files.
+  */
+  "show_definitions": true,
+
+  /*
     When enabled, pressing tab will insert the best matching completion.
     When disabled, tab will only trigger snippets or insert a tab.
     Shift+tab can be used to insert an explicit tab when tab_completion is
@@ -477,6 +489,9 @@
   // Show folders in the side bar in bold
   "bold_folder_labels": true,
 
+  // Draw divider lines between sections of the UI when using the Adaptive theme
+  "adaptive_dividers": true,
+
   /*
     OS X only: Set to true to disable Lion style full screen support.
     Sublime Text must be restarted for this to take effect.
@@ -567,6 +582,9 @@
 
   // OS X only: This controls if an empty window is created at startup or not.
   "create_window_at_startup": true,
+
+  // Experimental, OS X only: Show recent files on the Touch Bar
+  "show_navigation_bar": false,
 
   /*
     Set to true to close windows as soon as the last file is closed, unless
