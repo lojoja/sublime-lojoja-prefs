@@ -627,6 +627,7 @@
       ".git",
       ".hg",
       ".svn",
+      "__pycache__",
       "CVS"
     ],
 
