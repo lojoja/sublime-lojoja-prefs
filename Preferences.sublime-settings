@@ -726,6 +726,7 @@
   "ignored_packages": [
     "All Autocomplete",
     "Colorsublime",
+    "CSS",
     "Python",
     "Vintage"
   ],
