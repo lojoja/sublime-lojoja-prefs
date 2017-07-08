@@ -86,6 +86,12 @@
     // Whether to display inline tooltips
     "tooltips": false,
 
+    "tooltip_fontsize": "1rem",
+
+    "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
+
+    "tooltip_theme_excludes": [],
+
     /****************************************************************************
       User Settings: Gutter
     ****************************************************************************/
@@ -115,19 +121,28 @@
       "csslint": {
         "@disable": false,
         "args": [],
+        "errors": "",
         "excludes": [],
-        "ignore": "important,ids",
-        "warnings": "*"
+        "ignore": "",
+        "ignore_match": [
+          ".+important",
+          ".*use ID.*",
+          "Rule is empty"
+        ],
+        "warnings": ""
       },
       "flake8": {
           "@disable": false,
           "args": [],
           "builtins": "",
           "excludes": [],
+          "executable": "",
           "ignore": "",
+          "jobs": "1",
           "max-complexity": 10,
           "max-line-length": 120,
-          "select": ""
+          "select": "",
+          "show-code": false
       },
       "jshint": {
         "@disable": false,
@@ -137,14 +152,16 @@
       "json": {
         "@disable": false,
         "args": [],
-        "excludes": []
+        "excludes": [],
+        "strict": true
       },
       "pep8": {
         "@disable": true,
         "args": [],
         "excludes": [],
         "ignore": "E309",
-        "max-line-length": 120
+        "max-line-length": 120,
+        "select": ""
       },
       "php": {
         "@disable": false,
@@ -153,15 +170,18 @@
       },
       "pydocstyle": {
         "@disable": true,
+        "add-ignore": "D200, D203, D209, D204",
         "args": [],
-        "excludes": [],
-        "add-ignore": "D200, D203, D209, D204"
+        "excludes": []
       },
       "pylint": {
         "@disable": true,
         "args": ["--max-line-length=120"],
+        "disable": "R0201, R0903, R0913",
         "excludes": [],
-        "disable": "R0201, R0903, R0913"
+        "paths": [],
+        "rcfile": "",
+        "show-codes": false
       },
       "pyyaml": {
         "@disable": false,
@@ -170,6 +190,11 @@
       },
       "rst": {
         "@disable": true,
+        "args": [],
+        "excludes": []
+      },
+      "sublimesyntax": {
+        "@disable": false,
         "args": [],
         "excludes": []
       },
@@ -213,14 +238,40 @@
       value is the linter to use.
     */
     "syntax_map": {
+      "coffeescript (gulpfile)": "coffeescript",
       "html (django)": "html",
       "html (rails)": "html",
       "html 5": "html",
       "javascript (babel)": "javascript",
+      "javascript (eslint)": "javascript",
+      "javascript (gruntfile)": "javascript",
+      "javascript (gulpfile)": "javascript",
+      "javascript (postcss)": "javascript",
+      "javascript (stylelint)": "javascript",
+      "javascript (webpack)": "javascript",
+      "json (babel)": "json",
+      "json (bower)": "json",
+      "json (composer)": "json",
+      "json (eslint)": "json",
+      "json (npm)": "json",
+      "json (postcss)": "json",
+      "json (settings)": "json",
+      "json (stylelint)": "json",
+      "json (sublime)": "json",
+      "json (tern js)": "json",
       "magicpython": "python",
       "php": "html",
       "python django": "python",
-      "pythonimproved": "python"
+      "pythonimproved": "python",
+      "xml (config)": "xml",
+      "xml (svg)": "xml",
+      "yaml (circleci)": "yaml",
+      "yaml (docker)": "yaml",
+      "yaml (eslint)": "yaml",
+      "yaml (lock)": "yaml",
+      "yaml (procfile)": "yaml",
+      "yaml (stylelint)": "yaml",
+      "yaml (yarn)": "yaml"
     }
   }
 }
