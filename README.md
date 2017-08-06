@@ -1,7 +1,7 @@
 ~lojojaPrefs
 ============
 
-*Version 1.0.11*
+*Version 1.0.10*
 
 This package manages custom settings and preferences for [Sublime Text](https://www.sublimetext.com) and packages, and
 bootstraps [Package Control](https://packagecontrol.io) to install all desired packages at once.
@@ -32,8 +32,3 @@ Installation
 3. Change the extracted folder name to `~lojojaPrefs`
 4. Open the Sublime Text `Packages` directory with the `Preferences > Browse Packages…` menu item
 5. Copy the `~lojojaPrefs` folder to the `Packages` directory
-
-
-License
--------
-~lojojaPrefs is released under the [MIT License](./LICENSE)
