@@ -32,3 +32,7 @@ Installation
 3. Change the extracted folder name to `~lojojaPrefs`
 4. Open the Sublime Text `Packages` directory with the `Preferences > Browse Packages…` menu item
 5. Copy the `~lojojaPrefs` folder to the `Packages` directory
+
+License
+-------
+~lojojaPrefs is released under the [MIT License](./LICENSE)
