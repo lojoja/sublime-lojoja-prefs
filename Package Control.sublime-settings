@@ -305,6 +305,7 @@
     "Color Scheme - lojoja Colors",
     "Config Files",
     "CSS3",
+    "EdgeOS",
     "GitGutter",
     "Indent XML",
     "Jinja2",
@@ -347,7 +348,6 @@
   ****************************************************************************/
 
   "unmanaged_packages_ignore": [
-    "EdgeOS",
     "KSP",
     "KSP-Dev",
     "ManuScript",
