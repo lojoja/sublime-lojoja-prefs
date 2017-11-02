@@ -10,7 +10,7 @@
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "/Applications/Adobe Illustrator CC 2015.3/Adobe Illustrator.app",
+          "application": "/Applications/Adobe Illustrator CC 2018/Adobe Illustrator 2018.app",
           "extensions":"ai|svg",
           "args": []
         },
@@ -22,7 +22,7 @@
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "/Applications/Adobe Photoshop CC 2015.5/Adobe Photoshop CC 2015.5.app",
+          "application": "/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app",
           "extensions":"bmp|gif|jpg|jpeg|png|psd|tga|tif|tiff",
           "args": []
         },

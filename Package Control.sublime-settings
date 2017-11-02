@@ -201,7 +201,7 @@
     Supports more than one path to allow users to sync settings across
     operating systems.
   */
-  "git_binary": [],
+  "git_binary": ["/usr/local/bin/git"],
 
   /*
     This should NOT contain the name of the remote or branch - that will
@@ -276,7 +276,8 @@
     "Binaries Only": {
       // Exclude all .py files, but consequently include all .pyc files
       "files_to_ignore": [
-        "*.py", ".hgignore",
+        "*.py",
+        ".hgignore",
         ".gitignore",
         ".bzrignore",
         "*.sublime-project",

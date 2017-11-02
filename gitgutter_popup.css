@@ -1,0 +1,7 @@
+.git-gutter div.toolbar symbol {
+    font-family: "Source Code Pro", "Roboto Mono", "Segoe UI", monospace;
+}
+
+.git-gutter div.highlight {
+    font-family: "Source Code Pro", "sf mono", "Roboto Mono", "Liberation Mono", Menlo, Courier, monospace;
+}

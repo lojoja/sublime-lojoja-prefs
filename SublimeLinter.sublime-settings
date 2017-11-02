@@ -175,9 +175,10 @@
         "excludes": []
       },
       "pylint": {
-        "@disable": true,
+        "@disable": false,
         "args": ["--max-line-length=120"],
         "disable": "R0201, R0903, R0913",
+        "enable": "",
         "excludes": [],
         "paths": [],
         "rcfile": "",

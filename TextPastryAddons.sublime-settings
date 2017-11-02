@@ -4,7 +4,7 @@
   ****************************************************************************/
 
   "focus": ["toggle_side_bar", "toggle_status_bar", "toggle_tabs"],
-  "hide_tab_delay": 2.5
+  "hide_tab_delay": 2.5,
 
   "style": "font_face",
   "style_index": 0,

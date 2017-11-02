@@ -2,40 +2,46 @@
   /****************************************************************************
     Anaconda Tooltip Options
 
-    Sublime Text 3 supports tooltips since build 3070. If anaconda
-    runs in a ST3 installation equal or newer than build 3070 it can
-    be configured to show tooltips for documentation and signatures
+    Sublime Text 3 supports tooltips since build 3070; if anaconda
+    runs in a ST3 installation equal to or newer than build 3070, it
+    can be configured to show tooltips for documentation and signatures.
+
+    The options below set how the tooltip looks.
   ****************************************************************************/
 
   /*
-    The options below sets how the tooltip is shown. Set the theme
-    as dark if you are using a dark theme or light if you are using
-    a light one. Pssible options "light" or "dark"
+    Set the theme as dark if you are using a dark theme or light if you are using
+    a light one. Possible options "light", "dark", "popup".
   */
-  //"anaconda_tooltip_theme": "dark",
   "anaconda_tooltip_theme": "popup",
 
   /*
     If you set the following option as true, anaconda will display the
-    signatures of the methods in a floating popup
+    signatures of the methods in a floating popup.
 
-    *note*: this action takes effect if "display_signatures" is true
+    *note*: this only has an effect if "display_signatures" is "true".
   */
   "enable_signatures_tooltip": true,
 
   /*
     If you set the following option as true, anaconda will display the
-    documentation of modules, classes or methods in a floating popup
+    documentation of modules, classes or methods in a floating popup.
   */
   "enable_docstrings_tooltip": true,
 
   /*
     If the option below is set as true, anaconda will merge the
-    outputs of display_signatures and show documentation
+    outputs of display_signatures and show documentation.
 
-    *note*: This has only effect if tooltips are enabled
+    *note*: This only has an effect if tooltips are enabled.
   */
   "merge_signatures_and_doc": true,
+
+  /*
+    If you set the following option as true, anaconda will display the
+    signatures of the methods you are using while typing.
+  */
+  "display_signatures": true,
 
   /****************************************************************************
     Auto project switching
@@ -44,7 +50,7 @@
   /*
     If you set this to true, anaconda will detect project switches and
     will reconnect a new JsonServer with the switched project
-    configuration
+    configuration.
   */
   "auto_project_switch": true,
 
@@ -58,7 +64,7 @@
     new one in case that you don't define one yourself.
 
     This is enabled by default, disable it if you experience slowdowns
-    when you switch between projects, and fill an issue in GitHub
+    when you switch between projects, and fill an issue in GitHub.
   */
   "auto_python_builder_enabled": true,
 
@@ -82,16 +88,25 @@
       6. Start your Sublime Text 3 and
 
     Then your anaconda plugin will use the configured server and you will
-    get debug messages in the terminal where you ran it
+    get debug messages in the terminal where you ran it.
   */
   "jsonserver_debug": false,
   "jsonserver_debug_port": 9999,
 
   /****************************************************************************
-    Default python interpreter.
+    Default python interpreter
   ****************************************************************************/
 
-  //  This can (and should) be overridden by project settings
+  /*
+    This can (and should) be overridden by project settings
+
+    *note*: if you want anaconda to lint and complete using a remote
+    python interpreter that runs the anaconda's minserver.py script
+    in a remote machine just use it's address:port as interpreter
+    for example:
+
+      "python_interpreter": "tcp://my_remote.machine.com:19360"
+  */
   "python_interpreter": "python3.6",
 
   /****************************************************************************
@@ -100,11 +115,11 @@
 
   /*
     Disable anaconda completion
-    WARNING: set this as true will totally disable anaconda completion
+    WARNING: set this as true will totally disable anaconda completion.
   */
   "disable_anaconda_completion": false,
 
-  //  Set those as true if you don't want Sublime Text regular completions
+  //  Set those as true if you don't want Sublime Text regular completions.
   "suppress_word_completions": false,
   "suppress_explicit_completions": false,
 
@@ -116,15 +131,24 @@
 
   /*
     If complete_all_parameters is true, it will add all the possible
-    parameters, if it's false, it will add only required parameters
+    parameters, if it's false, it will add only required parameters.
   */
   "complete_all_parameters": false,
 
   /*
-    If you set the following option as true, anaconda will display the
-    signatures of the methods you are using while typing
+    If you set the following option as true, anaconda will complete
+    function parameters on keypress, when cursor is between function
+    brackets, independently from any other setting. It also works with
+    disabled tooltips.
+
+    Moreover you'll be able to choose at the moment of insertion, whether
+    inserting all parameters or just the required parameters.
+
+    Default keybindings (they only work between empty function brackets):
+    Tab      : insert required parameters
+    Ctrl+Tab : insert all parameters
   */
-  "display_signatures": true,
+  "parameters_completion_on_keypress": true,
 
   /****************************************************************************
     Linting
@@ -190,7 +214,7 @@
 
     This option is disabled by default, AutoPEP8 is really slow and it get
     the file buffer read only while its working in the background.
-    Use this at your risk
+    Use this at your risk.
   */
   "auto_formatting": false,
 
@@ -198,21 +222,21 @@
     Timeout for the autoformatting tool before fail
 
     Note: Take into account that depending on the size of the file you
-    want to autoformat, this can take a while
+    want to autoformat, this can take a while.
   */
   "auto_formatting_timeout": 1,  // seconds
 
   /*
     Enable unsafe changes:
       https://github.com/hhatto/autopep8#more-advanced-usage
-    Set it as 0 if you are unsure here
+    Set it as 0 if you are unsure here.
   */
   "aggressive": 0,
 
   /*
     Do not fix the errors listed here:
 
-    Note: By default we ignore E309 as this is not pep8 but it does
+    *note*: By default we ignore E309 as this is not pep8 but it does
     conflict with pep257 D211.
   */
   "autoformat_ignore": ["E309"],
@@ -220,10 +244,10 @@
   //  Fix only the errors listed here:
   "autoformat_select": [],
 
-  //  Set the threshold limit for McCabe complexity checker
+  //  Set the threshold limit for McCabe complexity checker.
   "mccabe_threshold": 7,
 
-  //  Set is a false to disable Anaconda Linting totally
+  //  Set to false to disable Anaconda linting entirely.
   "anaconda_linting": false,
 
   /*
@@ -245,7 +269,7 @@
   */
   "anaconda_linter_delay": 0.5,
 
-  //  If true anaconda does not remove lint marks while you type
+  //  If true, anaconda does not remove lint marks while you type
   "anaconda_linter_persistent": false,
 
   //  If true, anaconda draws gutter marks on line with errors
@@ -262,9 +286,12 @@
   "anaconda_gutter_theme": "simple",
 
   /*
-    If 'outline' (default) anaconda will outline error lines
-    If 'fill' anaconda will fill the lines
-    If 'none' anaconda will not draw anything on error lines
+    If 'outline' (default), anaconda will outline error lines.
+    If 'fill', anaconda will fill the lines.
+    If 'solid_underline', anaconda will draw a solid underline below regions.
+    If 'stippled_underline', anaconda will draw a stippled underline below regions.
+    If 'squiggly_underline', anaconda will draw a squiggly underline below regions.
+    If 'none', anaconda will not draw anything on error lines.
   */
   "anaconda_linter_mark_style": "outline",
 
@@ -297,13 +324,13 @@
     Use PyLint instead of PyFlakes and PEP-8
 
     **** WARNING ****
-    - If you set this value as true, PyFlakes and pep8 will not bet used
+    - If you set this value as true, PyFlakes and pep8 will not be used.
     - PyLint does *NOT* support lint buffers that are not already saved in
-      the file system
+      the file system.
   */
   "use_pylint": false,
 
-  //  Set this to false to turn pep8 checking off completely
+  //  Set this to false to turn pep8 checking off completely.
   "pep8": false,
 
   /*
@@ -334,7 +361,7 @@
        * W for warnings (reduced to Violation by default)
        * V for convention violations
     If you set a value that is not listed here, anaconda will ignore your
-    setting
+    setting.
   */
   "pep8_error_levels": {"E": "W", "W": "V", "V": "V"},
 
@@ -381,7 +408,7 @@
   ],
 
   /*
-    If set, the given file will be used as configuration for PyLint
+    If set, the given file will be used as configuration for PyLint.
 
     **** WARNING ****
     - If this option is set to something different than false,
@@ -392,7 +419,7 @@
   /*
     You can ignore specific PyLint error codes using this configuration.
     We strongly suggest that you better configure your pylintrc file to
-    determine which type of error is important to you
+    determine which type of error is important to you.
   */
   "pylint_ignore": ["R0201", "R0903", "R0913"],
 
@@ -547,35 +574,55 @@
   */
   //"test_before_command": "",
 
-  //  Command to execute tests with. nosetests by default
-  //"test_command": "pytest",
+    /*
+      Command to execute tests with. nosetests by default
+    */
+    "test_command": "nosetests",
 
-  /*
-    Uncomment the line below to execute any command after execute
-    your test suite.
-  */
-  //"test_after_command": "",
+    /*
+      Uncomment the line below to execute any command after execute
+      your test suite.
+    */
+    //"test_after_command": "",
 
-  //  This is the delimiter between the module and the class
-  //"test_delimeter": ":",
+    /*
+      This is the delimiter between the module and the class.
+    */
+    "test_delimeter": ":",
 
-  //  Uncomment the line below to use a virtualenv for your tests
-  //"test_virtualenv": ""
+    /*
+      This is the delimiter between the class and the method.
+    */
+    "test_method_delimeter": ".",
 
-  /*
-    Uncomment the line below to add a top level path when you ask
-    anaconda to run all your project tests.
+    /*
+      Whether to include full path of the test file/method.
+    */
+    "test_include_full_path": true,
 
-    Note: this is need for example to can run tests with `twisted's trial`
-  */
-  //"test_project_path": "./"
+    /*
+      Uncomment the line below to enable filepath-based test runner
+      patterns like those required for py.test.
+    */
+    // "test_filepath_patterns": true,
+
+    /* Uncomment the line below to use a virtualenv for your tests */
+    //"test_virtualenv": ""
+
+    /*
+      Uncomment the line below to add a top level path when you ask
+      anaconda to run all your project tests.
+
+      *note*: this is need for example to can run tests with `twisted's trial`
+    */
+    // "test_project_path": "./"
 
   /*
     Set this option to true if you get warnings about anaconda not
     being able to connect to your localhost on ST3 startup but it
     works normally after closing the error message.
 
-    NOTE: Ignoring errors may be dangerous.
+    *note*: Ignoring errors may be dangerous.
    */
 
    /* Parameters to include after test_command specific to testing scope */

@@ -8,7 +8,7 @@
   /*
     UI Theme. Control the look of Sublime Text's UI (buttons, tab, scroll bars, etc.)
   */
-  "theme": "Material-Theme.sublime-theme",
+  "theme": "Material-Theme-Darker.sublime-theme",
 
   //  El Capitan Theme Settings
   "el_capitan_font_default": false,

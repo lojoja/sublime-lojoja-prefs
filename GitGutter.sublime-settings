@@ -45,22 +45,27 @@
   "compare_against": "HEAD",
 
   /*
+    The algorithm used by git diff to determine the differences.
+
+    "default": let git decide (don't pass an algorithm)
+    "minimal": use minimal diff algorithm
+    "patience": use patience diff algorithm
+                see: http://bramcohen.livejournal.com/73318.html
+    "histogram": use histogram diff algorithm
+  */
+  "diff_algorithm": "patience",
+
+  /*
     Determines whether GitGutter ignores whitespace in modified files.
     Set "none" to ensure whitespace is considered in the diff
-    Set "all" to ignore all white space
     Set "eol" to only ignore whitespace at the end of lines
+    Set "space" to ignore changes in amount of white space
+    Set "all" to ignore all white space
   */
   "ignore_whitespace": "none",
 
   /*
-    Add --patience switch to git diff command. See
-    http://bramcohen.livejournal.com/73318.html for
-    an example of why you might need this.
-  */
-  "patience": true,
-
-  /*
-    (ST3, Build 3116+ only)
+    (ST3, Build 3119+ only)
 
     Enable an hover popup, which shows an diff of the
     changed lines.
@@ -80,14 +85,6 @@
   */
   "diff_popup_default_mode": "default",
 
-  /*
-    (ST3 only)
-
-    Whether the the diff popup should use icons (true) or
-    text (false) buttons
-  */
-  "diff_popup_use_icon_buttons": true,
-
   /****************************************************************************
     Timing
   ****************************************************************************/
@@ -103,13 +100,6 @@
     Set false to disable evaluation when changing views
   */
   "focus_change_mode": true,
-
-  /*
-    When set to true GitGutter runs asynchronously in a seperate thread
-    This may cause a small delay between a modification and the icon change
-    but can increase performance greatly if needed.
-  */
-  "non_blocking": true,
 
   /*
     When using non_blocking mode, delay update of gutter icons by the
@@ -140,6 +130,13 @@
     jinja2 supported syntax. GitGutter provides the following variables:
       {{repo}}     -- repository name / folder name containing the .git directory
       {{branch}}   -- checked out branch you are working on
+      {{remote}}   -- tracked remote of current branch you are working on or `None`
+      {{ahead}}    -- number of commits the local branch is ahead of remote
+      {{behind}}   -- number of commits the local branch is behind remote
+      {{added_files}}    -- number of untracked files added to working tree
+      {{deleted_files}}  -- number of files deleted from working tree
+      {{modified_files}} -- number of modified files in the working tree
+      {{staged_files}}   -- number of files in the staging area
       {{compare}}  -- commit/branch/HEAD the file is compared to
       {{state}}    -- One of committed/modified/ignored/untracked
       {{deleted}}  -- number of deleted regions
@@ -158,9 +155,9 @@
   /*
     Show GitGutter information in the minimap
 
-    0 = Hide markers
-    1 = Width of markers
-    2 = Highlight full line
+    =0: Hide markers
+    >0s: Width of markers
+    -1: Highlight full line
   */
   "show_in_minimap": 0,
 
@@ -184,6 +181,9 @@
     "anaconda-lint-outlines-warning",
     "sublimelinter-error-gutter-marks",
     "sublimelinter-warning-gutter-marks",
-    "bookmarks"
+    "bookmarks",
+    "lsp_error",
+    "lsp_warning",
+    "lsp_info"
   ],
 }
