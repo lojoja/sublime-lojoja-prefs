@@ -73,12 +73,12 @@
   /*
     Color Scheme. Sets the colors used within the text area
     Options:
-      - Packages/Color Scheme - lojoja Colors/lojojaDark.tmTheme
-      - Packages/Color Scheme - lojoja Colors/lojojaDarkBright.tmTheme
-      - Packages/Color Scheme - lojoja Colors/lojojaLight.tmTheme
-      - Packages/Color Scheme - lojoja Colors/lojojaLightBright.tmTheme
+      - Packages/Color Scheme - lojoja Colors/lojojaDark.sublime-color-scheme
+      - Packages/Color Scheme - lojoja Colors/lojojaDarkBright.sublime-color-scheme
+      - Packages/Color Scheme - lojoja Colors/lojojaLight.sublime-color-scheme
+      - Packages/Color Scheme - lojoja Colors/lojojaLightBright.sublime-color-scheme
   */
-  "color_scheme": "Packages/Color Scheme - lojoja Colors/lojojaLightBright.tmTheme",
+  "color_scheme": "Packages/Color Scheme - lojoja Colors/lojojaLightBright.sublime-color-scheme",
 
   /*
     Font Face / Font Size
