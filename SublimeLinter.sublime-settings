@@ -31,6 +31,8 @@
 
     "shell_timeout": 10,
 
+    "use_current_shell_path": false,
+
     /*
       Whether NextError/PreviousError commands should wrap at end/beginning of file
       Default: true
@@ -131,6 +133,11 @@
         ],
         "warnings": ""
       },
+      "eslint": {
+        "@disable": false,
+        "args": [],
+        "excludes": []
+      },
       "flake8": {
           "@disable": false,
           "args": [],
@@ -145,7 +152,7 @@
           "show-code": false
       },
       "jshint": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": []
       },
@@ -175,9 +182,9 @@
         "excludes": []
       },
       "pylint": {
-        "@disable": false,
+        "@disable": true,
         "args": ["--max-line-length=120"],
-        "disable": "R0201, R0903, R0913",
+        "disable": "C0321, R0201, R0903, R0913",
         "enable": "",
         "excludes": [],
         "paths": [],
@@ -185,7 +192,7 @@
         "show-codes": false
       },
       "pyyaml": {
-        "@disable": false,
+        "@disable": true,
         "args": [],
         "excludes": []
       },
@@ -203,6 +210,11 @@
         "@disable": false,
         "args": [],
         "excludes": []
+      },
+      "yamllint": {
+        "@disable": false,
+        "args": [],
+        "excludes": []
       }
     },
 
@@ -212,7 +224,9 @@
 
     "paths": {
       "linux": [],
-      "osx": [],
+      "osx": [
+        "/usr/local/bin"
+      ],
       "windows": []
     },
 
