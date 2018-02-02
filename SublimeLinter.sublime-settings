@@ -1,292 +1,256 @@
 {
   /****************************************************************************
-    User Settings
+    User Settings: General
   ****************************************************************************/
 
-  "user": {
+  /*
+    Set to true to print extra information in the console.
+    Default: false
+  */
+  "debug": false,
 
-    /****************************************************************************
-      User Settings: Display
-    ****************************************************************************/
+  /*
+    When in the "background" lint mode, this value determines
+    a delay before a request is send to the linter
+    Default: 0.3 (seconds)
+  */
+  "delay": 0.3,
 
-    /*
-      Whether to print errors to Sublime Text console
-      Default: false
-    */
-    "debug": false,
+  /*
+    Lint Modes determine when the linter is run
+      background: asynchronously on every change
+      load_save: when a file is opened and every time it's saved
+      manual: only when calling the Lint This View command
+    Default: "background"
+  */
+  "lint_mode": "background",
 
-    /*
-      When "Lint Mode" is "Background", how long to wait before linting.
-      Default: 0.25 (seconds)
-    */
-    "delay": 0.25,
+  // How much time we should be available for reading $PATH from the shell.
+  "shell_timeout": 10,
 
-    /*
-      The current lint mode ("background", "load/save", "save only", "manual")
-      Default: "background"
-    */
-    "lint_mode": "background",
+  /****************************************************************************
+    User Settings: Display
+  ****************************************************************************/
 
-    "rc_search_limit": 3,
+  /*
+    Determines what happens when a linter reports an error without column.
+    By default, a mark is put in the gutter but no text is highlighted.
+    If this setting is ``true``, the entire line is also highlighted.
+    Default: false
+  */
+  "no_column_highlights_line": false,
 
-    "shell_timeout": 10,
+  /*
+    Show a report for errors on a line by hovering over the gutter.
+    Default: true
+  */
+  "show_hover_line_report": true,
 
-    "use_current_shell_path": false,
+  /*
+    Show a report for errors on a region by hovering over it.
+    Default: true
+  */
+  "show_hover_region_report": true,
 
-    /*
-      Whether NextError/PreviousError commands should wrap at end/beginning of file
-      Default: true
-    */
-    "wrap_find": true,
+  /*
+    Highlight errors in the minimap.
+    Default: true
+  */
+  "show_marks_in_minimap": false,
 
-    /****************************************************************************
-      User Settings: Display
-    ****************************************************************************/
-
-    /*
-      The color used to mark errors in the text.
-      Default: d02000
-    */
-    "error_color": "d02000",
-
-    /*
-      The current mark style ("none", "fill", "outline", "solid underline", "squiggly underline")
-      Default: "outline"
-    */
-    "mark_style": "outline",
-
-    /*
-      Whether to highlight the entire line if an error occurs with no column information
-      Default: false
-    */
-    "no_column_highlights_line": false,
-
-    /*
-      Whether to hide warnings in the "Show All Errors" quick panel.
-      Default: false
-    */
-    "passive_warnings": false,
-
-    /*
-      Whether to show all errors in a quick panel when file is saved.
-      Default: false
-    */
-    "show_errors_on_save": false,
-
-    /*
-      Whether to show error marks in the minimap.
-      Default: true
-    */
-    "show_marks_in_minimap": false,
-
-    /*
-      The color used to mark warnings in the text.
-      Default: ddb700
-    */
-    "warning_color": "ddb700", // Default
-
-    // Whether to display inline tooltips
-    "tooltips": false,
-
-    "tooltip_fontsize": "1rem",
-
-    "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
-
-    "tooltip_theme_excludes": [],
-
-    /****************************************************************************
-      User Settings: Gutter
-    ****************************************************************************/
-
-    /*
-      Package-relative path to the .gutter-theme file
-      Default: "Packages/SublimeLinter/gutter-themes/Default.gutter-theme"
-    */
-    "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default.gutter-theme",
-
-    /*
-      List of available gutter themes to exclude
-      Default: []
-    */
-    "gutter_theme_excludes": [],
-
-    /****************************************************************************
-      User Settings: Linters
-    ****************************************************************************/
-
-    "linters": {
-      "contrib-sublime-syntax": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "csslint": {
-        "@disable": false,
-        "args": [],
-        "errors": "",
-        "excludes": [],
-        "ignore": "",
-        "ignore_match": [
-          ".+important",
-          ".*use ID.*",
-          "Rule is empty"
-        ],
-        "warnings": ""
-      },
-      "eslint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "flake8": {
-          "@disable": false,
-          "args": [],
-          "builtins": "",
-          "excludes": [],
-          "executable": "",
-          "ignore": "",
-          "jobs": "1",
-          "max-complexity": 10,
-          "max-line-length": 120,
-          "select": "",
-          "show-code": false
-      },
-      "jshint": {
-        "@disable": true,
-        "args": [],
-        "excludes": []
-      },
-      "json": {
-        "@disable": false,
-        "args": [],
-        "excludes": [],
-        "strict": true
-      },
-      "pep8": {
-        "@disable": true,
-        "args": [],
-        "excludes": [],
-        "ignore": "E309",
-        "max-line-length": 120,
-        "select": ""
-      },
-      "php": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "pydocstyle": {
-        "@disable": true,
-        "add-ignore": "D200, D203, D209, D204",
-        "args": [],
-        "excludes": []
-      },
-      "pylint": {
-        "@disable": true,
-        "args": ["--max-line-length=120"],
-        "disable": "C0321, R0201, R0903, R0913",
-        "enable": "",
-        "excludes": [],
-        "paths": [],
-        "rcfile": "",
-        "show-codes": false
-      },
-      "pyyaml": {
-        "@disable": true,
-        "args": [],
-        "excludes": []
-      },
-      "rst": {
-        "@disable": true,
-        "args": [],
-        "excludes": []
-      },
-      "sublimesyntax": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "xmllint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      },
-      "yamllint": {
-        "@disable": false,
-        "args": [],
-        "excludes": []
-      }
+  /*
+    Global styles for all linters.
+      - "mark_style" options:
+          "fill", "outline",
+          "solid_underline", "squiggly_underline", "stippled_underline"
+          "none"
+        Default: "outline"
+      - "priority" determines which mark is show in the gutter;
+        error marks will still always overwrite warning marks.
+        Default: 1
+      - "scope" is used to determine the color;
+        Defaults:
+          warning: "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter"
+          error: "region.redish markup.deleted.sublime_linter markup.error.sublime_linter"
+        region.<colorish> are automatically generated scopes in ST > 3148.
+      - "types" is an array which can contain "warning" and/or "error".
+      - "codes" is an array which can contain error codes provided by a linter.
+      - "icon" can be:
+          one of the default icons: "circle", "dot" or "bookmark"
+          or one provided by a gutter theme (e.g. "warning" or "error")
+          or a path to an icon file like (e.g. "Packages/icons/warning.png")
+          or "none" to remove the icon
+        Default: "dot"
+    Note: At least one of those targets is required: types or codes.
+    Styles can also be specified per linter.
+  */
+  "styles": [
+    {
+      "mark_style": "outline",
+      "priority": 1,
+      "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "icon": "dot",
+      "types": [
+        "warning"
+      ]
     },
-
-    /****************************************************************************
-      User Settings: Paths
-    ****************************************************************************/
-
-    "paths": {
-      "linux": [],
-      "osx": [
-        "/usr/local/bin"
-      ],
-      "windows": []
-    },
-
-    /****************************************************************************
-      User Settings: Python
-    ****************************************************************************/
-
-    // The Python version to use
-    "@python": "3.6",
-
-    // The path to python
-    "python_paths": {
-      "linux": [],
-      "osx": [],
-      "windows": []
-    },
-
-    /****************************************************************************
-      User Settings: Syntax Map
-    ****************************************************************************/
-
-    /*
-      Each key is a syntax file (.tmLanguage or .sublime-syntax) and the
-      value is the linter to use.
-    */
-    "syntax_map": {
-      "coffeescript (gulpfile)": "coffeescript",
-      "html (django)": "html",
-      "html (rails)": "html",
-      "html 5": "html",
-      "javascript (babel)": "javascript",
-      "javascript (eslint)": "javascript",
-      "javascript (gruntfile)": "javascript",
-      "javascript (gulpfile)": "javascript",
-      "javascript (postcss)": "javascript",
-      "javascript (stylelint)": "javascript",
-      "javascript (webpack)": "javascript",
-      "json (babel)": "json",
-      "json (bower)": "json",
-      "json (composer)": "json",
-      "json (eslint)": "json",
-      "json (npm)": "json",
-      "json (postcss)": "json",
-      "json (settings)": "json",
-      "json (stylelint)": "json",
-      "json (sublime)": "json",
-      "json (tern js)": "json",
-      "magicpython": "python",
-      "php": "html",
-      "python django": "python",
-      "pythonimproved": "python",
-      "xml (config)": "xml",
-      "xml (svg)": "xml",
-      "yaml (circleci)": "yaml",
-      "yaml (docker)": "yaml",
-      "yaml (eslint)": "yaml",
-      "yaml (lock)": "yaml",
-      "yaml (procfile)": "yaml",
-      "yaml (stylelint)": "yaml",
-      "yaml (yarn)": "yaml"
+    {
+      "mark_style": "outline",
+      "priority": 1,
+      "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+      "icon": "dot",
+      "types": [
+        "error"
+      ]
     }
+  ],
+
+  /****************************************************************************
+    User Settings: Gutter
+  ****************************************************************************/
+
+  /*
+    Available gutter themes:
+      Blueberry/Blueberry - cross.gutter-theme
+      Blueberry/Blueberry - round.gutter-theme
+      Circle
+      Danish Royalty
+      Default
+      Hands
+      Knob/Knob - simple.gutter-theme
+      Knob/Knob - symbol.gutter-theme
+      Koloria
+      ProjectIcons
+    Note that you may need to change the "icon" property in "styles"
+    to an icon in the theme (they usually include "warning" and "error")
+    Default: "none"
+  */
+  "gutter_theme": "Default",
+
+  /****************************************************************************
+    User Settings: Linters
+  ****************************************************************************/
+  "linters": {
+    "csslint": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": [],
+      "errors": [],
+      "warnings": [],
+      "ignore": [
+        "empty-rules",
+        "important"
+      ],
+    },
+    "eslint": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": []
+    },
+    "flake8": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": [],
+      "executable": "",
+    },
+    "jshint": {
+      "disable": true,
+      "args": [],
+      "working_dir": "",
+      "excludes": []
+    },
+    "json": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": [],
+      "strict": true
+    },
+    "php": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": [],
+      "cmd": ""
+    },
+    "sublimesyntax": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": []
+    },
+    "xmllint": {
+      "disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": []
+    },
+    "yamllint": {
+      "@disable": false,
+      "args": [],
+      "working_dir": "",
+      "excludes": []
+    }
+  },
+
+  /****************************************************************************
+    User Settings: Paths
+  ****************************************************************************/
+
+  // Provide extra paths to be searched when locating system executables.
+  "paths": {
+    "linux": [],
+    "osx": [
+      "/usr/local/bin"
+    ],
+    "windows": []
+  },
+
+  /****************************************************************************
+    User Settings: Syntax Map
+  ****************************************************************************/
+
+  /*
+    Each key is a syntax file (.tmLanguage or .sublime-syntax) and the
+    value is the linter to use.
+  */
+  "syntax_map": {
+    "coffeescript (gulpfile)": "coffeescript",
+    "html (django)": "html",
+    "html (rails)": "html",
+    "html 5": "html",
+    "javascript (babel)": "javascript",
+    "javascript (eslint)": "javascript",
+    "javascript (gruntfile)": "javascript",
+    "javascript (gulpfile)": "javascript",
+    "javascript (postcss)": "javascript",
+    "javascript (stylelint)": "javascript",
+    "javascript (webpack)": "javascript",
+    "json (babel)": "json",
+    "json (bower)": "json",
+    "json (composer)": "json",
+    "json (eslint)": "json",
+    "json (npm)": "json",
+    "json (postcss)": "json",
+    "json (settings)": "json",
+    "json (stylelint)": "json",
+    "json (sublime)": "json",
+    "json (tern js)": "json",
+    "magicpython": "python",
+    "php": "html",
+    "python django": "python",
+    "pythonimproved": "python",
+    "xml (config)": "xml",
+    "xml (svg)": "xml",
+    "yaml (circleci)": "yaml",
+    "yaml (docker)": "yaml",
+    "yaml (eslint)": "yaml",
+    "yaml (lock)": "yaml",
+    "yaml (procfile)": "yaml",
+    "yaml (stylelint)": "yaml",
+    "yaml (yarn)": "yaml"
   }
 }
