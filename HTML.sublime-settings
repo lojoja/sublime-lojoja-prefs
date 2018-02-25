@@ -1,8 +1,6 @@
+// HTML Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Sublime Preferences Override
-  ****************************************************************************/
-
-  //  The number of spaces a tab is considered equal to
+  // The number of spaces a tab is considered equal to
   "tab_size": 4
 }

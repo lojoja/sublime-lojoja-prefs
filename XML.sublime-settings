@@ -1,8 +1,23 @@
+// XML Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Sublime Preferences Override
-  ****************************************************************************/
+  // The number of spaces a tab is considered equal to
+  "tab_size": 4,
 
-  //  The number of spaces a tab is considered equal to
-  "tab_size": 4
+  "hidden_extensions": [
+    "dae",
+    "rss",
+    "tmLanguage",
+    "tmSnippet",
+    "tmTheme",
+    "vcproj"
+  ],
+
+  "package_dev.bootstrapped":
+  [
+    3126,
+    2017,
+    3,
+    13
+  ]
 }

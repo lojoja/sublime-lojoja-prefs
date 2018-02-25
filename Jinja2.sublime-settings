@@ -1,9 +1,7 @@
+// Jinja2 Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Language Specific Settings
-  ****************************************************************************/
-
-  //  File extensions to associate with this language
+  // File extensions to associate with this language
   "extensions": [
     "j2",
     "jinja",
@@ -23,10 +21,6 @@
     "xml.jinja2"
   ],
 
-  /****************************************************************************
-    Sublime Preferences Override
-  ****************************************************************************/
-
-  //  The number of spaces a tab is considered equal to
+  // The number of spaces a tab is considered equal to
   "tab_size": 4,
 }

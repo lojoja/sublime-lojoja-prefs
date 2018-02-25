@@ -1,8 +1,11 @@
 {
-  "folders":
-  [
-    {
-      "path": "."
-    }
-  ]
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"auto_python_builder_enabled": false
+	}
 }

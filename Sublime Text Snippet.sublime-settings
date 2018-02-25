@@ -1,8 +1,14 @@
-// Sublime Text Build System Preferences – ~lojojaPrefs
+// Sublime Text Snippet Preferences – ~lojojaPrefs
 // ================================================================
 {
   // File extensions to associate with this language
-  "extensions": ["sublime-build"],
+  "extensions": ["sublime-snippet"],
+
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": false,
+
+  // Set to false to disable detection of tabs vs. spaces on load
+  "detect_indentation": true,
 
   // Disables horizontal scrolling if enabled.
   // May be set to true, false, or "auto", where it will be disabled for
@@ -10,5 +16,5 @@
   "word_wrap": false,
 
   // Controls what scopes auto complete will be triggered in
-  "auto_complete_selector": "source.json - comment - string | meta.placeholder-name | meta.command-name | meta.main-key | keyword.other.block.end.placeholder",
+  "auto_complete_selector": "meta.mapping - comment - meta.setting-value",
 }

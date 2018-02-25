@@ -1,20 +1,12 @@
+// YAML Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Language Specific Settings
-  ****************************************************************************/
-
-  //  File extensions to associate with this language
+  // File extensions to associate with this language
   "extensions": [
-    "sublime-syntax",
     "yaml",
-    "YAML-tmTheme",
     "yml"
   ],
 
-  /****************************************************************************
-    Sublime Preferences Override
-  ****************************************************************************/
-
-  //  The number of spaces a tab is considered equal to
+  // The number of spaces a tab is considered equal to
   "tab_size": 2
 }

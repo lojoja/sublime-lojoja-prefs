@@ -1,34 +1,20 @@
+// TextPastrySelection Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Debug
-  ****************************************************************************/
+    "run_tests": false,
 
-  "run_tests": false,
+    "preset_zero_based_index": false,
+    "range_zero_based_index": false,
 
-  /****************************************************************************
-    Index
-  ****************************************************************************/
+    "use_regex": true,
+    "ignore_case": true,
+    "smart_case": true,
+    "threshold": "[\\W]",
 
-  "preset_zero_based_index": false,
-  "range_zero_based_index": false,
+    "preview_file_size_threshold": 10,
+    "preview_chunk_size": 8192,
+    "preview_min_length": 0,
 
-  /****************************************************************************
-    Selection
-  ****************************************************************************/
-
-  "use_regex": true,
-  "ignore_case": true,
-  "smart_case": true,
-  "threshold": "[\\W]",
-
-  /****************************************************************************
-    Preview
-  ****************************************************************************/
-
-  "preview_file_size_threshold": 10,
-  "preview_chunk_size": 8192,
-  "preview_min_length": 0,
-
-  "preview_find_timeout": 2,
-  "preview_process_timeout": 1
+    "preview_find_timeout": 2,
+    "preview_process_timeout": 1
 }

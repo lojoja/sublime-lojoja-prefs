@@ -1,14 +1,11 @@
+// Sass Preferences – ~lojojaPrefs
+// ================================================================
 {
-  /****************************************************************************
-    Language Specific Settings
-  ****************************************************************************/
-
   //  File extensions to associate with this language
-  "extensions": ["sass", "scss"],
-
-  /****************************************************************************
-    Sublime Preferences Override
-  ****************************************************************************/
+  "extensions": [
+    "sass",
+    "scss"
+  ],
 
   //  The number of spaces a tab is considered equal to
   "tab_size": 4

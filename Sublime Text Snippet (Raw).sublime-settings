@@ -1,0 +1,17 @@
+// Sublime Text Snippet (Raw) Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": false,
+
+  // Set to false to disable detection of tabs vs. spaces on load
+  "detect_indentation": true,
+
+  // Disables horizontal scrolling if enabled.
+  // May be set to true, false, or "auto", where it will be disabled for
+  // source code, and otherwise enabled.
+  "word_wrap": false,
+
+  // Controls what scopes auto complete will be triggered in
+  "auto_complete_selector": "meta.mapping - comment - meta.setting-value",
+}

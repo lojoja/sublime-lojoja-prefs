@@ -1,11 +1,19 @@
-// EdgeOS Preferences – ~lojojaPrefs
+// JavaScript (Babel) Preferences – ~lojojaPrefs
 // ================================================================
 {
+  // File extensions to associate with this language
+  "extensions": [
+    "babel",
+    "es6",
+    "js",
+    "jsx"
+  ],
+
   // Columns in which to display vertical rulers
   "rulers": [120],
 
   // The number of spaces a tab is considered equal to
-  "tab_size": 4,
+  "tab_size": 2,
 
   // Makes auto indent a little smarter, e.g., by indenting the next line
   // after an if statement in C. Requires auto_indent to be enabled.
@@ -18,8 +26,4 @@
   // May be set to true, false, or "auto", where it will be disabled for
   // source code, and otherwise enabled.
   "word_wrap": false,
-
-  // Set to a value other than 0 to force wrapping at that column rather than the
-  // window width
-  "wrap_width": 120,
 }

@@ -1,0 +1,16 @@
+// Sublime Text Color Scheme Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // Disables horizontal scrolling if enabled.
+  // May be set to true, false, or "auto", where it will be disabled for
+  // source code, and otherwise enabled.
+  "word_wrap": false,
+
+  // Controls what scopes auto complete will be triggered in
+  "auto_complete_selector": "meta.function-call.var.sublime-color-scheme | meta.font-style.sublime-color-scheme | meta.underline-style.sublime-color-scheme | meta.scope-selector.sublime | - string - comment",
+
+  // Additional situations to trigger auto complete
+  "auto_complete_triggers": [
+    {"characters": ".", "selector": "meta.scope-selector.sublime"}
+  ],
+}

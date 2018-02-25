@@ -1,0 +1,25 @@
+// KSP Preferences – ~lojojaPrefs
+// ================================================================
+{
+  //  File extensions to associate with this language
+  "extensions": ["ksp"],
+
+  // Characters that are considered to separate words
+  "word_separators": "/\\()\"'-:,;<>~#^&*|+=[]{}`~?",
+
+  // Calculates indentation automatically when pressing enter
+  "auto_indent": true,
+
+  // Makes auto indent a little smarter, e.g., by indenting the next line
+  // after an if statement in C. Requires auto_indent to be enabled.
+  "smart_indent": true,
+
+  // Set to false to not highlight angle brackets. This only takes effect if
+  // match_brackets is true
+  "match_brackets_angle": false,
+
+  // Set to false to disable scrolling past the end of the buffer.
+  // On OS X, this value is overridden in the platform specific settings, so
+  // you'll need to place this line in your user settings to override it.
+  "scroll_past_end": false
+}

@@ -1,0 +1,22 @@
+// Sublime Text Syntax Definition (YAML) Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // The number of spaces a tab is considered equal to
+  "tab_size": 2,
+
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": true,
+
+  // Disables horizontal scrolling if enabled.
+  // May be set to true, false, or "auto", where it will be disabled for
+  // source code, and otherwise enabled.
+  "word_wrap": false,
+
+  // Controls what scopes auto complete will be triggered in
+  "auto_complete_selector": "meta.tag - punctuation.definition.tag.begin.xml | meta.settings-key-wrapper | meta.inside-value.string.shellVariable-name | meta.main-key-wrapper | meta.shellVariable-name.wrapper | meta.inside-dict-settings | meta.inside-dict.settings.tmPreferences | meta.inside-dict - meta.inside-value - meta.inside-dict-key",
+
+  // Additional situations to trigger auto complete
+  "auto_complete_triggers": [
+    {"characters": ".", "selector": "source.yaml-tmlanguage - comment"}
+  ]
+}
