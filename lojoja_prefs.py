@@ -1,7 +1,8 @@
 import sublime
 
 PACKAGE_NAME = '~lojojaPrefs'
-SETTINGS_FILE = 'Package Control.sublime-settings'
+LP_SETTINGS_FILE = '{}.sublime-settings'.format(PACKAGE_NAME)
+PC_SETTINGS_FILE = 'Package Control.sublime-settings'
 
 
 def plugin_loaded():
@@ -9,15 +10,18 @@ def plugin_loaded():
     try:
         from package_control import events
     except ImportError:
-        print('~lojojaPrefs failed to import `package_control.events`. Aborting `installed_packages` updated.')
+        print('[{}] Failed to import `package_control.events`. Aborting `installed_packages` updated.'.format(PACKAGE_NAME))
         return
 
     if events.install(PACKAGE_NAME) or events.post_upgrade(PACKAGE_NAME):
-        settings = sublime.load_settings(SETTINGS_FILE)
+        lp_settings = sublime.load_settings(LP_SETTINGS_FILE)
+        pc_settings = sublime.load_settings(PC_SETTINGS_FILE)
 
-        i_pkgs = settings.get('installed_packages', [])
-        u_pkgs = settings.get('uninstalled_packages', [])
+        i_pkgs = pc_settings.get('installed_packages', [])
+        u_pkgs = lp_settings.get('uninstalled_packages', [])
         i_pkgs = [p for p in i_pkgs if p not in u_pkgs]
 
-        settings.set('installed_packages', i_pkgs)
-        sublime.save_settings(SETTINGS_FILE)
+        pc_settings.set('installed_packages', i_pkgs)
+        sublime.save_settings(PC_SETTINGS_FILE)
+
+        print('[{}] Installed Package list updated'.format(PACKAGE_NAME))

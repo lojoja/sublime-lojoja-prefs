@@ -253,16 +253,5 @@
     "VBDotNet",
     "xml2json",
     "~lojojaPrefs"
-  ],
-
-  // Non-standard key
-  "uninstalled_packages": [
-    "Material Theme",
-    "Material Theme - Appbar",
-    "SublimeLinter-jshint",
-    "SublimeLinter-pep8",
-    "SublimeLinter-pylint",
-    "SublimeLinter-pyyaml",
-    "Theme - El Capitan"
   ]
 }
