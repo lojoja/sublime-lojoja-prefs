@@ -19,10 +19,7 @@
   // under 1.0.0 are not considered pre-release, only those using the SemVer
   // -prerelease suffixes will be ignored if the package is not in this
   // list.
-  "install_prereleases": [
-    "SublimeLinter",
-    "SublimeLinter-flake8"
-  ],
+  "install_prereleases": [],
 
   // If debugging information for HTTP/HTTPS connections should be printed
   // to the Sublime Text console
@@ -219,39 +216,5 @@
   "enable_tests": false,
 
   // All installed (and managed) packages
-  "installed_packages": [
-    "A File Icon",
-    "Anaconda",
-    "Babel",
-    "ChannelRepositoryTools",
-    "Color Scheme - lojoja Colors",
-    "Config Files",
-    "CSS3",
-    "DA UI",
-    "EdgeOS",
-    "GitGutter",
-    "Indent XML",
-    "Jinja2",
-    "MagicPython",
-    "Package Control",
-    "PackageDev",
-    "PackageResourceViewer",
-    "Pretty JSON",
-    "Project Specific Syntax Settings",
-    "requirementstxt",
-    "Sass",
-    "SideBarEnhancements",
-    "SublimeLinter",
-    "SublimeLinter-contrib-yamllint",
-    "SublimeLinter-csslint",
-    "SublimeLinter-eslint",
-    "SublimeLinter-flake8",
-    "SublimeLinter-json",
-    "SublimeLinter-php",
-    "SublimeLinter-xmllint",
-    "Text Pastry",
-    "VBDotNet",
-    "xml2json",
-    "~lojojaPrefs"
-  ]
+  "installed_packages": []
 }

@@ -1,7 +1,57 @@
 // ~lojojaPrefs Preferences – ~lojojaPrefs
 // ================================================================
 {
-  "uninstalled_packages": [
+  // Enable verbose console output
+  "debug": false,
+
+  // Enable preleases for these packages
+  "prerelease_packages": [],
+
+  // Disable preleases for these packages
+  "disabled_prerelease_packages": [
+    "SublimeLinter",
+    "SublimeLinter-flake8"
+  ],
+
+  // Enable these packages
+  "packages": [
+    "A File Icon",
+    "Anaconda",
+    "Babel",
+    "ChannelRepositoryTools",
+    "Color Scheme - lojoja Colors",
+    "Config Files",
+    "CSS3",
+    "DA UI",
+    "EdgeOS",
+    "GitGutter",
+    "Indent XML",
+    "Jinja2",
+    "MagicPython",
+    "Package Control",
+    "PackageDev",
+    "PackageResourceViewer",
+    "Pretty JSON",
+    "Project Specific Syntax Settings",
+    "requirementstxt",
+    "Sass",
+    "SideBarEnhancements",
+    "SublimeLinter",
+    "SublimeLinter-contrib-yamllint",
+    "SublimeLinter-csslint",
+    "SublimeLinter-eslint",
+    "SublimeLinter-flake8",
+    "SublimeLinter-json",
+    "SublimeLinter-php",
+    "SublimeLinter-xmllint",
+    "Text Pastry",
+    "VBDotNet",
+    "xml2json",
+    "~lojojaPrefs"
+  ],
+
+  // Disable these packages
+  "disabled_packages": [
     "Material Theme",
     "Material Theme - Appbar",
     "SublimeLinter-jshint",
