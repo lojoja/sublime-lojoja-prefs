@@ -81,7 +81,8 @@
             "disable": false,
             "args": [],
             "working_dir": "",
-            "excludes": []
+            "excludes": [],
+            "selector": "source.js - meta.attribute-with-value"
         },
         "flake8": {
             "disable": false,
@@ -148,6 +149,16 @@
     // Highlight problems in the minimap.
     "show_marks_in_minimap": false,
 
+    // Display counters in the status bar.
+    // {warning} and {error} will be replaced with the actual numbers.
+    // Set to "" to display nothing
+    "statusbar.counters_template": "W: {warning} E: {error}",
+
+    // Show the messages for problems at your cursor position
+    // {message} will be replaced by the actual messages.
+    // Set to "" to display nothing
+    "statusbar.messages_template": "{messages}",
+
     // Global styles for all linters.
     // - mark_style options:
     //   "fill", "outline",
@@ -199,12 +210,6 @@
         "html (rails)": "html",
         "html 5": "html",
         "javascript (babel)": "javascript",
-        "javascript (eslint)": "javascript",
-        "javascript (gruntfile)": "javascript",
-        "javascript (gulpfile)": "javascript",
-        "javascript (postcss)": "javascript",
-        "javascript (stylelint)": "javascript",
-        "javascript (webpack)": "javascript",
         "json (babel)": "json",
         "json (bower)": "json",
         "json (composer)": "json",
