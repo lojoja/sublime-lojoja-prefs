@@ -1,7 +1,7 @@
 ~lojojaPrefs
 ============
 
-*Version 1.1.3*
+*Version 1.1.4*
 
 This package manages custom settings and preferences for [Sublime Text](https://www.sublimetext.com) and packages, and
 bootstraps [Package Control](https://packagecontrol.io) to install all desired packages at once.
