@@ -76,6 +76,7 @@
                 "empty-rules",
                 "important"
             ],
+            "selector": "source.css"
         },
         "eslint": {
             "disable": false,
@@ -90,38 +91,44 @@
             "working_dir": "",
             "excludes": [],
             "executable": "",
+            "selector": "source.python"
         },
         "json": {
             "disable": false,
             "args": [],
             "working_dir": "",
             "excludes": [],
-            "strict": true
+            "strict": true,
+            "selector": "source.json - source.json.sublime"
         },
         "php": {
-            "disable": false,
+            "disable": true,
             "args": [],
             "working_dir": "",
             "excludes": [],
-            "cmd": ""
+            "cmd": "",
+            "selector": "embedding.php, source.php"
         },
         "sublimesyntax": {
             "disable": false,
             "args": [],
             "working_dir": "",
-            "excludes": []
+            "excludes": [],
+            "selector": "source.json.sublime, source.yaml.sublime, text.xml.sublime"
         },
         "xmllint": {
             "disable": false,
             "args": [],
             "working_dir": "",
-            "excludes": []
+            "excludes": [],
+            "selector": "text.xml - text.xml.sublime"
         },
         "yamllint": {
             "@disable": false,
             "args": [],
             "working_dir": "",
-            "excludes": []
+            "excludes": [],
+            "selector": "source.yaml - source.yaml.sublime"
         }
     },
 
@@ -145,6 +152,13 @@
 
     // Highlight problems in the minimap.
     "show_marks_in_minimap": false,
+
+    // Show the output panel on save if there are problems.
+    // Note: currently works best with lint_mode "background", See #1200
+    // Set to "window" to check if the window has problems.
+    // Set to "view" to only check the current file.
+    // Set to "never" to disable this feature.
+    "show_panel_on_save": "never",
 
     // Display counters in the status bar.
     // {warning} and {error} will be replaced with the actual numbers.
@@ -201,34 +215,5 @@
     // Maps variant syntaxes to the syntax that you have a linter for.
     // The syntax is the name of the syntax definition file, in lower case
     // Run this in the console to find it: view.settings().get('syntax').lower()
-    "syntax_map": {
-        "coffeescript (gulpfile)": "coffeescript",
-        "html (django)": "html",
-        "html (rails)": "html",
-        "html 5": "html",
-        "javascript (babel)": "javascript",
-        "json (babel)": "json",
-        "json (bower)": "json",
-        "json (composer)": "json",
-        "json (eslint)": "json",
-        "json (npm)": "json",
-        "json (postcss)": "json",
-        "json (settings)": "json",
-        "json (stylelint)": "json",
-        "json (sublime)": "json",
-        "json (tern js)": "json",
-        "magicpython": "python",
-        "php": "html",
-        "python django": "python",
-        "pythonimproved": "python",
-        "xml (config)": "xml",
-        "xml (svg)": "xml",
-        "yaml (circleci)": "yaml",
-        "yaml (docker)": "yaml",
-        "yaml (eslint)": "yaml",
-        "yaml (lock)": "yaml",
-        "yaml (procfile)": "yaml",
-        "yaml (stylelint)": "yaml",
-        "yaml (yarn)": "yaml"
-    }
+    "syntax_map": {}
 }
