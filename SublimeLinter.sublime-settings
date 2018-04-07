@@ -24,6 +24,8 @@
     "gutter_theme": "Default",
 
     // EXPERIMENTAL: See below `demote_while_editing`.
+    // Tip: If you set this to a very high number, like 360 seconds, you
+    // basically see the demoted regions only on save.
     "highlights.time_to_idle": 5,
 
     // EXPERIMENTAL: One of 'none', 'ws_regions', 'warnings'
@@ -167,6 +169,9 @@
 
     // Show the messages for problems at your cursor position
     // {message} will be replaced by the actual messages.
+    // {linter} will be replaced by the linter reporting the error.
+    // {type} will be replaced by either warning or error.
+    // {code} will be replaced by the error code.
     // Set to "" to display nothing
     "statusbar.messages_template": "{messages}",
 
