@@ -1,0 +1,8 @@
+// Git Rebase Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // File extensions to associate with this language
+  "extensions": [
+    "git-rebase-todo"
+  ]
+}

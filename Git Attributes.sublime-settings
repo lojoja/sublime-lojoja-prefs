@@ -1,0 +1,10 @@
+// Git Attributes Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // File extensions to associate with this language
+  "extensions": [
+    "attributes",
+    "gitattributes",
+    ".gitattributes"
+  ]
+}

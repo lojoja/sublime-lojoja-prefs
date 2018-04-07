@@ -1,0 +1,9 @@
+// Git Config Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // File extensions to associate with this language
+  "extensions": [
+    "gitconfig",
+    ".gitconfig"
+  ]
+}

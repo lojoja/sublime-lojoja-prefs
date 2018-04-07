@@ -1,0 +1,8 @@
+// Git Log Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // File extensions to associate with this language
+  "extensions": [
+    "gitlog"
+  ]
+}

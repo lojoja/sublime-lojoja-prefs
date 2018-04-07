@@ -1,0 +1,10 @@
+// Git Commit Preferences – ~lojojaPrefs
+// ================================================================
+{
+  // File extensions to associate with this language
+  "extensions": [
+    "COMMIT_EDITMSG",
+    "MERGE_MSG",
+    "TAG_EDITMSG"
+  ]
+}
