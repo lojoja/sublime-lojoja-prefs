@@ -5,18 +5,18 @@
     "debug": false,
 
     // When in the "background" lint mode, this value determines
-    // a delay before a request is send to the linter
+    // the minimum delay before a request is send to the linter
     "delay": 0.3,
 
     // Available gutter themes:
-    // Blueberry/Blueberry - cross.gutter-theme
-    // Blueberry/Blueberry - round.gutter-theme
+    // Blueberry Cross
+    // Blueberry Round
     // Circle
     // Danish Royalty
     // Default
     // Hands
-    // Knob/Knob - simple.gutter-theme
-    // Knob/Knob - symbol.gutter-theme
+    // Knob
+    // Knob Symbol
     // Koloria
     // ProjectIcons
     // Note that you may need to change the "icon" property in "styles"
@@ -28,7 +28,7 @@
     // basically see the demoted regions only on save.
     "highlights.time_to_idle": 5,
 
-    // EXPERIMENTAL: One of 'none', 'ws_regions', 'warnings'
+    // EXPERIMENTAL: One of 'none', 'ws_regions', 'warnings', 'all'
     // Essentially picks a predicate fn from `highlights.py` to demote the
     // visibility of some lint errors while editing (busy). These errors
     // appear after `time_to_idle` seconds or immediately on save.
@@ -39,10 +39,15 @@
     // the regions. E.g. try 'comment' to get a soft gray.
     "highlights.demote_scope": "",
 
+    // Send `terminate` signal to old lint processes, if their result would
+    // be thrown away. If false we fire-and-forget processes instead.
+    "kill_old_processes": false,
+
     // Lint Modes determine when the linter is run
     // background: asynchronously on every change
     // load_save: when a file is opened and every time it's saved
     // manual: only when calling the Lint This View command
+    // save: only when a file is saved
     "lint_mode": "background",
 
     // Example of linter specific settings.
@@ -50,20 +55,20 @@
     // What settings are available is documented in the readme of the
     // specific linter plugin.
     // "linters": {
-    //     "csslint": {
+    //     "somelinter": {
     //         "disable": false,
     //         "args": [],
     //         "excludes": []
     //     },
-    //     "flake8": {
+    //     "somepythonlinter": {
     //         "python": null,
     //         "disable": false,
-    //         "args": [],
+    //         "args": [
+    //             "--max-complexity", "-1",
+    //             "--max-line-length", "100",
+    //             "--ignore", "E731,E402"
+    //         ],
     //         "excludes": [],
-    //         "ignore": "",
-    //         "max-complexity": -1,
-    //         "max-line-length": null,
-    //         "select": ""
     //     }
     // }
     "linters": {
@@ -78,7 +83,7 @@
                 "empty-rules",
                 "important"
             ],
-            "selector": "source.css"
+            "selector": "source.css - meta.attribute-with-value"
         },
         "eslint": {
             "disable": false,
@@ -109,7 +114,7 @@
             "working_dir": "",
             "excludes": [],
             "cmd": "",
-            "selector": "embedding.php, source.php"
+            "selector": "embedding.php, source.php, text.html.basic"
         },
         "sublimesyntax": {
             "disable": false,
@@ -135,8 +140,8 @@
     },
 
     // Determines what happens when a linter reports a problem without column.
-    // By default, a mark is put in the gutter but no text is highlighted.
-    // If this setting is ``true``, the entire line is also highlighted.
+    // By default, a mark is put in the gutter and the first character is highlighted.
+    // If this setting is `true`, the entire line is also highlighted.
     "no_column_highlights_line": false,
 
     // Provide extra paths to be searched when locating system executables.
@@ -163,9 +168,9 @@
     "show_panel_on_save": "never",
 
     // Display counters in the status bar.
-    // {warning} and {error} will be replaced with the actual numbers.
-    // Set to "" to display nothing
-    "statusbar.counters_template": "W: {warning} E: {error}",
+    // The {}'s will be replaced by warnings and errors respectively.
+    // Example alternative: (w:{}, e:{})
+    "statusbar.counters_template": "(w:{}|e:{})",
 
     // Show the messages for problems at your cursor position
     // {message} will be replaced by the actual messages.
@@ -173,23 +178,29 @@
     // {type} will be replaced by either warning or error.
     // {code} will be replaced by the error code.
     // Set to "" to display nothing
-    "statusbar.messages_template": "{messages}",
+    "statusbar.messages_template": "{message}",
+
+    "statusbar.show_active_linters": true,
 
     // Global styles for all linters.
     // - mark_style options:
+    //   "none"
     //   "fill", "outline",
     //   "solid_underline", "squiggly_underline", "stippled_underline"
-    //   "none"
-    // - priority determines which mark is show in the gutter;
-    //   error marks will still always overwrite warning marks.
+    //   The underline styles are replaced with outlines when there is
+    //   whitespace in the problem region, because underlines aren't drawn
+    //   on whitespace (ST issue #137).
+    // - priority determines which mark is shown in the gutter;
+    //   error marks will still always override warning marks.
     // - scope is used to determine the color;
     //   region.<colorish> are automatically generated scopes in ST > 3148.
     // - types is an array which can contain "warning" and/or "error".
     // - codes is an array which can contain error codes provided by a linter.
     // - icon can be:
     //   one of the default icons: "circle", "dot" or "bookmark"
-    //   or a path to an icon file like (e.g. "Packages/icons/warning.png")
     //   or "none" to remove the icon
+    //   or a path to an icon file like
+    //      "Packages/SublimeLinter/gutter-themes/Blueberry Cross/error.png"
     //   or one provided by a gutter theme (e.g. "warning" or "error")
     //      in theme Default: "warning", "error", "cog", "x",
     //      and "diamond", "heart", "pointer", "square", "star", "triangle" all
