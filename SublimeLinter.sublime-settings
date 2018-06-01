@@ -23,21 +23,20 @@
     // to an icon in the theme (they usually include "warning" and "error")
     "gutter_theme": "Default",
 
-    // EXPERIMENTAL: See below `demote_while_editing`.
-    // Tip: If you set this to a very high number, like 360 seconds, you
-    // basically see the demoted regions only on save.
-    "highlights.time_to_idle": 5,
-
-    // EXPERIMENTAL: One of 'none', 'ws_regions', 'warnings', 'all'
-    // Essentially picks a predicate fn from `highlights.py` to demote the
-    // visibility of some lint errors while editing (busy). These errors
-    // appear after `time_to_idle` seconds or immediately on save.
+    // Demote the visibility of a class off errors while you're editing.
+    // The errors will re-appear after `time_to_idle` and immediately on save.
+    // - ws_regions: erroneous regions that contain whitespace
+    // - warnings: errors of the "warning" type
+    // - all: demote all the things
+    // - none: disable this feature
     "highlights.demote_while_editing": "none",
 
-    // EXPERIMENTAL: A typical Sublime scope which gets applied to
-    // the regions while busy. Use the empty string to actually hide
-    // the regions. E.g. try 'comment' to get a soft gray.
+    // Apply a color (via scope) to the demoted errors.
+    // E.g. "" will hide the errors, "comment" is usually a subtle color.
     "highlights.demote_scope": "",
+
+    // How long to wait before showing the demoted errors again.
+    "highlights.time_to_idle": 5,
 
     // Send `terminate` signal to old lint processes, if their result would
     // be thrown away. If false we fire-and-forget processes instead.
@@ -58,7 +57,12 @@
     //     "somelinter": {
     //         "disable": false,
     //         "args": [],
-    //         "excludes": []
+    //         "excludes": [],
+    //         "styles": [
+    //              {
+    //                  "icon": "diamond"
+    //              }
+    //         ]
     //     },
     //     "somepythonlinter": {
     //         "python": null,
@@ -209,22 +213,17 @@
     // Styles can also be specified per linter.
     "styles": [
         {
-            "mark_style": "outline",
-            "priority": 1,
-            "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
-            "icon": "dot",
-            "types": [
-                "warning"
-            ]
+            "scope": "region.yellowish markup.warning.sublime_linter",
+            "types": ["warning"]
         },
         {
-            "mark_style": "outline",
+            "scope": "region.redish markup.error.sublime_linter",
+            "types": ["error"]
+        },
+        {
             "priority": 1,
-            "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
             "icon": "dot",
-            "types": [
-                "error"
-            ]
+            "mark_style": "outline"
         }
     ],
 
