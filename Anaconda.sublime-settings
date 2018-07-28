@@ -96,7 +96,7 @@
 
           "python_interpreter": "tcp://my_remote.machine.com:19360"
     */
-    "python_interpreter": "python3.6",
+    "python_interpreter": "python3",
 
     /*
         Disable anaconda completion
