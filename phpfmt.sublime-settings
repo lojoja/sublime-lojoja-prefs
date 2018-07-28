@@ -1,0 +1,6 @@
+// phpfmt Preferences – ~lojojaPrefs
+// ================================================================
+{
+  "version": 4,
+  "php_bin":"/usr/local/bin/php",
+}
