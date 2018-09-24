@@ -151,7 +151,8 @@
             "selector": "source.python",
             "styles": [],
             "working_dir": "",
-            "python": 3
+            "python": 3,
+            "ignore_fixables": true,
         },
         "json": {
             "disable": false,
