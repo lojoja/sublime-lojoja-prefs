@@ -30,6 +30,8 @@
   "disabled_menuitem_copy_dir_path": true,
   "disabled_menuitem_paste_in_parent": false,
   "disabled_menuitem_empty": true,
+  "disabled_menuitem_folder_save": false,
+  "disabled_menuitem_folder_close": false,
 
   // if installed in a default location maybe this works.
   "default_browser": "safari", // one of this list: firefox, chrome, canary, chromium, opera, safari, ie
@@ -40,6 +42,7 @@
   "disable_send_to_trash": false,
 
   "use_powershell": true,
+  "use_command": "",
 
   "auto_close_empty_groups": false,
 

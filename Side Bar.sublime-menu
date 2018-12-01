@@ -33,24 +33,24 @@
 
       // Microsoft Office
       {
-        "caption": "Microsoft Excel 2011",
+        "caption": "LibreOffice Calc",
         "id": "side-bar-files-open-with-excel",
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "/Applications/Microsoft Office 2011/Microsoft Excel.app",
+          "application": "/Applications/Calc.app",
           "extensions": "csv|tsv|xls|xlsx",
           "args": []
         },
         "open_automatically" : false
       },
       {
-        "caption": "Microsoft Word 2011",
+        "caption": "LibreOffice Writer",
         "id": "side-bar-files-open-with-excel",
         "command": "side_bar_files_open_with",
         "args": {
           "paths": [],
-          "application": "/Applications/Microsoft Office 2011/Microsoft Word.app",
+          "application": "/Applications/Writer.app",
           "extensions": "dox|docx|rtf",
           "args": []
         },
