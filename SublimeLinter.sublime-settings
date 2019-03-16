@@ -81,7 +81,16 @@
             // override the default, inherited ENV.
             "env": {},
 
+            // Exclude files that match the given pattern(s).
             "excludes": [],
+
+            // Suppress errors that match the the given pattern(s).
+            // Either a 'string' or an 'array'. Each input string is handled as
+            // a case-insensitive regex pattern and matched against the
+            // error_type, code, and message. If it matches, the error will be
+            // thrown away.
+            // E.g. ["warning: ", "W3\d\d: ", "missing <!DOCTYPE> declaration"]
+            "filter_errors": [],
 
             // Lint mode determines when the linter is run. The linter setting
             // will take precedence over the global setting.
@@ -244,11 +253,11 @@
     // Example alternative: (w:{}, e:{})
     "statusbar.counters_template": "(w:{}|e:{})",
 
-    // Show the messages for problems at your cursor position
-    // {message} will be replaced by the actual messages.
-    // {linter} will be replaced by the linter reporting the error.
-    // {type} will be replaced by either warning or error.
-    // {code} will be replaced by the error code.
+    // Show the messages for problems at your cursor position.
+    // - {message} will be replaced by the actual messages.
+    // - {linter} will be replaced by the linter reporting the error.
+    // - {type} will be replaced by either warning or error.
+    // - {code} will be replaced by the error code.
     // Set to "" to display nothing
     "statusbar.messages_template": "{message}",
 
