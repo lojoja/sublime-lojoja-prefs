@@ -33,11 +33,13 @@
   "disabled_menuitem_folder_save": false,
   "disabled_menuitem_folder_close": false,
 
-  // if installed in a default location maybe this works.
-  "default_browser": "safari", // one of this list: firefox, chrome, canary, chromium, opera, safari, ie
-  "open_all_browsers": [], // any of this list: firefox, chrome, canary, chromium, opera, safari, ie, edge
+  //one of this list: firefox, firefox-developer-edition, chrome, canary, chromium, opera, safari, ie, edge
+  "default_browser": "safari",
 
-  "portable_browser": "", // for example:  C:/Program Files (x86)/Nightly/firefox.exe
+  //any of this list: firefox, firefox-developer-edition, chrome, canary, chromium, opera, safari, ie, edge
+  "open_all_browsers": [],
+
+  "portable_browser": "", // (complete path to executable) for example:  C:/Program Files (x86)/Nightly/firefox.exe
 
   "disable_send_to_trash": false,
 
@@ -45,6 +47,9 @@
   "use_command": "",
 
   "copy_path_absolute_from_project_includes_line_number": false,
+
+  "find_and_replace_discards_previous_search": false,
+  "find_and_replace_opens_in_new_view": true,
 
   // if you donated set this value to "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW"
   // to remove the menuitem "Donate 20$" from the sidebar context menu.
