@@ -2,6 +2,11 @@
 // ================================================================
 {
     // Sets the colors used within the text area
+    //
+    // AYU Theme Color Schemes:
+    //  - "Packages/ayu/ayu-light.sublime-color-scheme",
+    //  - "Packages/ayu/ayu-mirage.sublime-color-scheme",
+    //  - "Packages/ayu/ayu-dark.sublime-color-scheme",
     "color_scheme": "Packages/Color Scheme - lojoja Colors/lojojaLightBright.sublime-color-scheme",
 
     // Note that the font_face and font_size are overridden in the platform
@@ -329,7 +334,21 @@
     //
 
     // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
-    "theme": "DA.sublime-theme",
+    //
+    // AYU Themes:
+    //  - ayu-dark.sublime-theme
+    //  - ayu-light.sublime-theme
+    //  - ayu-mirage.sublime-theme
+    "theme": "ayu-mirage.sublime-theme",
+
+    // AYU Theme Option: Use native titlebar on macOS
+    "ui_native_titlebar": false,
+
+    // AYU Theme Option: Use separators between panels
+    "ui_separator": true,
+
+    // AYU Theme Option: Use wider scrollbars
+    "ui_wide_scrollbars": false,
 
     // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to
     // scroll slower, or set to larger than 1 to scroll faster
