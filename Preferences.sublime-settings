@@ -7,6 +7,12 @@
     //  - "Packages/ayu/ayu-light.sublime-color-scheme",
     //  - "Packages/ayu/ayu-mirage.sublime-color-scheme",
     //  - "Packages/ayu/ayu-dark.sublime-color-scheme",
+    //
+    // lojoja Color Schemes:
+    //  - "Packages/Color Scheme - lojoja Colors/lojojaDark.sublime-color-scheme",
+    //  - "Packages/Color Scheme - lojoja Colors/lojojaDarkBright.sublime-color-scheme",
+    //  - "Packages/Color Scheme - lojoja Colors/lojojaLight.sublime-color-scheme",
+    //  - "Packages/Color Scheme - lojoja Colors/lojojaLightBright.sublime-color-scheme",
     "color_scheme": "Packages/Color Scheme - lojoja Colors/lojojaLightBright.sublime-color-scheme",
 
     // Note that the font_face and font_size are overridden in the platform
