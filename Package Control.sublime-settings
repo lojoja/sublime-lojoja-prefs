@@ -92,14 +92,6 @@
   // with the current version.
   "user_agent": "Package Control v%s",
 
-  // Increase Github ratelimit for private repos
-  "query_string_params": {
-    "api.github.com": {
-      "client_id": "Iv1.4643864bf756238f",
-      "client_secret": "f9040d60c57f3d23d762ed2ee31b1f041b394831"
-    }
-  },
-
   // A list of package names to ignore when performing operations. This will
   // only affect packages that appear to be a git or hg repository, but will
   // be especially useful for package developers who manually deal with the
